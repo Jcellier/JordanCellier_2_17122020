@@ -1,0 +1,18 @@
+body {
+    margin-left: 30px;
+}
+
+.logo img {
+    width: 7%;
+}
+
+#link {
+    display: flex;
+    list-style-type: none;
+    
+}
+
+#link li {
+    text-decoration: none;
+    color: #DEEBFF;
+}
