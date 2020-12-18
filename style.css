@@ -58,7 +58,7 @@ header h2 {
     height: auto;
     padding-top: 7px;
     background: #b8b6b6c4;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 10px 0px 0px 10px;
     text-align: center;
 }
 
@@ -69,7 +69,7 @@ header h2 {
 
 #submit {
     background-color: #0065FC;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 10px 10px 0;
     border: #0065FC 1px solid;
     color: white;
     text-align: center;
@@ -78,41 +78,34 @@ header h2 {
 
 #filtres {
     display: flex;
-    border: 3px solid black;
-    width: 40%;
+    width: 45%;
     justify-content: space-between;
-    align-content: center;
-}
-
-#filtres i {
-    align-self: center;
-
-}
-
-#filtres i {
-    border: 1px solid black;
-    color:  #0065FC;
-    background-color: #DEEBFF;
-    display: flex;
-    width: 4%;
-    height: 30px;
-    border-radius: 50%;
     align-items: center;
-    position:relative;
 }
 
-.fas p {
-    color: black;
-    background-color: white;
-    border-top: 1px solid #b8b6b6c4;
-    border-right: 1px solid #b8b6b6c4;
-    border-bottom: 1px solid #b8b6b6c4;
+#filtres h3 {
+    font-size: 1em;
+}
+
+#filtres p {
+    border: 1px solid #b8b6b6c4;
     border-left: none;
-    align-self: center;
-    padding: 5px 5px 5px 10px;
-    border-radius: 12px;
-    position: relative;
-    
+    width: fit-content;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 0;
 }
 
+#filtres span {
+    border: 2px transparent rgba(136, 136, 255, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #DEEBFF;
+    color: blue;
 
+}
+
+#filtres i {
+    width: 50px
+    height: 0%;
+}
