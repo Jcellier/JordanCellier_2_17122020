@@ -14,7 +14,7 @@
     <header>
         <div class="logo"><img src="images/logo/Reservia@3x.png" alt="logo Reservia">
             <ul id="link">
-                <li><a href="#">Hébergement</a></li>
+                <li><a href="# z">Hébergement</a></li>
                 <li><a href="#">Activités</a></li>
                 <li><a href="#">S'inscrire</a></li>
             </ul>
@@ -22,11 +22,22 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve.</h1>
         <h2>En plein centre ville ou pleine nature</h2>
         <div id="search">
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="search" name="Rechercher" id="search">
+            <i class="fas fa-map-marker-alt fa-sm"></i>
+            <input type="search" name="search" placeholder="Marseille, France">
+            <button type="submit" id="submit">Rechercher</button>
         </div>
-        <div id="filtres"></div>
-        <h3><img src="#" alt="logo information">Plus de 500 logements sont disponibles dans cette ville.</h3>
+        <div id="filtres">
+            <h3>Filtres</h3>
+            <i class="fas fa-money-bill-wave"><p id="eco">Économique</p></i>
+            
+            <i class="fas fa-child"><p id="family">Familial</p></i>
+            
+            <i class="fas fa-heart"><p id="romance">Romantique</p></i>
+            
+            <i class="fas fa-dog"><p id="animals">Animaux autorisés</p></i>
+            
+        </div>
+        <i class="fas fa-info">Plus de 500 logements sont disponibles dans cette ville.</i>
     </header>
 
     <!-- Structure de la section principale de la page -->

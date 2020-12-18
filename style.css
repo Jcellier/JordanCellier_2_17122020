@@ -43,13 +43,76 @@ header h2 {
 
 #search {
     display: flex;
+    height: 30px;
+}
+
+#search input {
+    border-top: 1px #b8b6b6c4 solid;
+    border-bottom: 1px #b8b6b6c4 solid;
+    border-left: 1px #b8b6b6c4 solid;
+    border-right: none;
 }
 
 #search i {
     width: 25px;
-    height: 20px;
-    padding-top: 5px;
-    background: #a5a1a1c4;
+    height: auto;
+    padding-top: 7px;
+    background: #b8b6b6c4;
     border-radius: 5px 0px 0px 5px;
     text-align: center;
 }
+
+::placeholder {
+    opacity: 1;
+    font-weight: bolder;
+}
+
+#submit {
+    background-color: #0065FC;
+    border-radius: 0 5px 5px 0;
+    border: #0065FC 1px solid;
+    color: white;
+    text-align: center;
+    font-size: smaller;
+}
+
+#filtres {
+    display: flex;
+    border: 3px solid black;
+    width: 40%;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#filtres i {
+    align-self: center;
+
+}
+
+#filtres i {
+    border: 1px solid black;
+    color:  #0065FC;
+    background-color: #DEEBFF;
+    display: flex;
+    width: 4%;
+    height: 30px;
+    border-radius: 50%;
+    align-items: center;
+    position:relative;
+}
+
+.fas p {
+    color: black;
+    background-color: white;
+    border-top: 1px solid #b8b6b6c4;
+    border-right: 1px solid #b8b6b6c4;
+    border-bottom: 1px solid #b8b6b6c4;
+    border-left: none;
+    align-self: center;
+    padding: 5px 5px 5px 10px;
+    border-radius: 12px;
+    position: relative;
+    
+}
+
+
