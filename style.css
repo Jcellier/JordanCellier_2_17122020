@@ -152,7 +152,7 @@ section {
 
 #hebergement {
     /*border: 3px solid blue;*/
-    width: 50%;
+    width: 70%;
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -161,26 +161,29 @@ section {
 }
 
 #images {
-    height: 550px;
+    height: 600px;
     display: flex;
     align-content: space-around;
     justify-content: space-between;
     flex-wrap: wrap;
     /*border: 3px solid brown;*/
+    
 }
 
 #images img {
-    width: 300px;  
-    height: 150px;
+    width: 410px;  
+    height: 190px;
     padding: 5px;
     object-fit: cover;
     border-radius: 12px 12px 0 0px;
+    
 }
 
 .heb {
     /*border: 3px black solid;*/
     background-color: white;
     border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
 
@@ -225,8 +228,8 @@ section {
 }
 
 #populaire {
-    border: black 3px solid;
-    width: 25%;
+    /*border: black 3px solid;*/
+    width: 20%;
     height: auto;
     display: flex;
     margin-left: 40px;
@@ -238,30 +241,35 @@ section {
 }
 
 #populaire h1 {
-    border: blue 3px solid;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
+    margin-bottom: ;
 }
-
-#populaire h1 i {
-/*To fill */
-
-}
-
 
 .image_aside {
-    border: yellow 3px solid;
+    /*border: yellow 3px solid;*/
     border-radius: 12px;
     display: flex;
     width: 80%;
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
-.image_aside p {
-    /*border: orange 1px solid;*/
-    display: flex;
-}
 
 .desc {
     padding-left: 20px;
+    margin-top: 0%;
+}
+
+.desc .fas {
+    color: blue;
+}
+
+.desc .empty {
+    color: grey;
 }
 
 .image_aside img {
@@ -270,7 +278,7 @@ section {
     height: 150px;
     padding: 5px;
     object-fit: cover;
-    border-radius: 12px 0px 0 12px;
+    
 }
 
 .image_aside a {
@@ -278,4 +286,84 @@ section {
     text-decoration: none;
     color: black;
     
+}
+
+
+/* ACTIVITY */
+
+
+.activ {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1fr;
+    border: 3px black solid;
+}
+
+.activ img {
+    width: 130px;  
+    height: 150px;
+    padding: 15px;
+    object-fit: cover;
+    
+}
+
+#port {
+    border-radius: 12px;
+    border: 3px black solid;
+}
+
+#port img {
+    height: 400px;
+    width: 300px;
+}
+
+#port p {
+    padding-left: 20px;
+}
+
+#fort img {
+    height: 150px;
+    width: 300px;
+    border: 3px black solid;
+}
+
+#fort p {
+
+}
+
+#iles img{
+    height: 75px;
+    width: 300px;
+    border: 3px black solid;
+}
+
+#iles p {
+
+}
+
+#calanques img {
+    height: 400px;
+    width: 300px;
+}
+
+#calanques p {
+
+}
+
+#dame img {
+    height: 150px;
+    width: 300px;
+}
+
+#dame p {
+
+}
+
+#parc img {
+    height: 150px;
+    width: 300px; 
+}
+
+#parc p {
+
 }
