@@ -140,6 +140,7 @@ header h2 {
 
 #info {
     font-size: 0.7em;
+    margin-bottom: 30px;
 }
 
 
@@ -149,8 +150,8 @@ section {
 }
 
 #hebergement {
-    border: 3px solid blue;
-    width: 60%;
+    /*border: 3px solid blue;*/
+    width: 50%;
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -159,34 +160,36 @@ section {
 }
 
 #images {
+    height: 550px;
     display: flex;
-    flex-wrap: wrap;
+    align-content: space-around;
     justify-content: space-between;
-    align-items:center;
-    border: 3px solid brown;
+    flex-wrap: wrap;
+    /*border: 3px solid brown;*/
 }
 
 #images img {
     width: 300px;  
     height: 150px;
-    padding: 10px;
+    padding: 5px;
     object-fit: cover;
-    margin-top: ;
+    border-radius: 12px 12px 0 0px;
 }
 
 .heb {
-    border: 3px black solid;
+    /*border: 3px black solid;*/
     background-color: white;
     border-radius: 12px;
 
 }
 
 #images .fas {
-    color: blue
+    color: blue;
+    margin-bottom: 10px;
 }
 
 #images .empty {
-    color: grey
+    color: grey;
 }
 
 .heb p, .heb .first {
@@ -197,8 +200,47 @@ section {
 .name {
     font-weight: bolder;
     font-size: 1em;
+    padding-bottom: 5px;
 }
 
 .night {
     font-size: 0.9em;
+    padding-bottom: 5px;
+}
+
+#more {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#more:hover {
+    text-decoration: underline;
+}
+
+#populaire {
+    border: black 3px solid;
+    width: 40%;
+    height: 800x;
+    display: flex;
+    margin-left: 40px;
+    border-radius: 12px;
+    
+}
+
+#image_aside img {
+    border: brown 3px solid;
+    display: flex;    
+    flex-direction: column;
+    width: 300px;  
+    height: 150px;
+    padding: 5px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0px;
+    
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
 }
