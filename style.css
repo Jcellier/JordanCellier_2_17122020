@@ -1,6 +1,7 @@
 body {
     margin-left: 30px;
     font-family: 'Raleway', sans-serif;
+    margin-right: 30px;
 }
 
 .logo {
@@ -25,7 +26,7 @@ body {
 }
 
 #link a:visited {
-    /* color: grey; */
+    color: grey;
 }
 
 #link li {
@@ -218,29 +219,63 @@ section {
     text-decoration: underline;
 }
 
-#populaire {
-    border: black 3px solid;
-    width: 40%;
-    height: 800x;
-    display: flex;
-    margin-left: 40px;
-    border-radius: 12px;
-    
-}
-
-#image_aside img {
-    border: brown 3px solid;
-    display: flex;    
-    flex-direction: column;
-    width: 300px;  
-    height: 150px;
-    padding: 5px;
-    object-fit: cover;
-    border-radius: 12px 12px 0 0px;
-    
-}
-
 section {
     display: flex;
     flex-wrap: wrap;
+}
+
+#populaire {
+    border: black 3px solid;
+    width: 25%;
+    height: auto;
+    display: flex;
+    margin-left: 40px;
+    border-radius: 12px;
+    background-color: #f3ededd8;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#populaire h1 {
+    border: blue 3px solid;
+}
+
+#populaire h1 i {
+/*To fill */
+
+}
+
+
+.image_aside {
+    border: yellow 3px solid;
+    border-radius: 12px;
+    display: flex;
+    width: 80%;
+    background-color: white;
+}
+
+.image_aside p {
+    /*border: orange 1px solid;*/
+    display: flex;
+}
+
+.desc {
+    padding-left: 20px;
+}
+
+.image_aside img {
+    /*border: brown 3px solid;*/
+    width: 130px;  
+    height: 150px;
+    padding: 5px;
+    object-fit: cover;
+    border-radius: 12px 0px 0 12px;
+}
+
+.image_aside a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    
 }
