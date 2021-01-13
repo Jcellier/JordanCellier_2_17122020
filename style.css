@@ -1,7 +1,11 @@
 body {
-    margin-left: 30px;
+    margin-left: 0px;
     font-family: 'Raleway', sans-serif;
-    margin-right: 30px;
+    margin-right: 0px;
+}
+
+header {
+    margin-left: 30px;
 }
 
 .logo {
@@ -152,8 +156,9 @@ section {
 
 #hebergement {
     /*border: 3px solid blue;*/
-    width: 70%;
-    padding: 40px;
+    margin-left: 30px;
+    width: 65%;
+    padding: 30px;
     display: flex;
     flex-wrap: wrap;
     background-color: #f3ededd8;
@@ -161,7 +166,7 @@ section {
 }
 
 #images {
-    height: 600px;
+    height: 620px;
     display: flex;
     align-content: space-around;
     justify-content: space-between;
@@ -171,8 +176,8 @@ section {
 }
 
 #images img {
-    width: 410px;  
-    height: 190px;
+    width: 360px;  
+    height: 150px;
     padding: 5px;
     object-fit: cover;
     border-radius: 12px 12px 0 0px;
@@ -229,7 +234,7 @@ section {
 
 #populaire {
     /*border: black 3px solid;*/
-    width: 20%;
+    width: 23%;
     height: auto;
     display: flex;
     margin-left: 40px;
@@ -255,7 +260,7 @@ section {
     width: 80%;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+    padding-right: 20px;
 }
 
 
@@ -292,78 +297,178 @@ section {
 /* ACTIVITY */
 
 
+#activity h1 {
+    margin-left: 30px;
+}
+
 .activ {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1fr;
-    border: 3px black solid;
+    margin-left: 30px;
+    display: grid;
+    width: 94%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column: repeat(4, 1fr);
+    grid-gap: 5em;
 }
 
 .activ img {
-    width: 130px;  
-    height: 150px;
-    padding: 15px;
     object-fit: cover;
+    width: 100%;
     
 }
 
 #port {
     border-radius: 12px;
-    border: 3px black solid;
+    grid-column: 1;
+    grid-row: 1/2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 12px;
 }
 
 #port img {
     height: 400px;
-    width: 300px;
+    
+    padding: 0px;
+    border-radius: 12px 12px 0 0;
 }
 
 #port p {
     padding-left: 20px;
 }
 
+#fort {
+    grid-column: 2;
+    grid-row: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 55%;
+    border-radius: 12px;
+}
+
 #fort img {
-    height: 150px;
-    width: 300px;
-    border: 3px black solid;
+    height: 200px;
+    width: 100%;
+    padding: 0px;
+    border-radius: 12px 12px 0 0;
 }
 
 #fort p {
+    padding-left: 20px;
+}
 
+#iles {
+    grid-column: 2;
+    grid-row: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-self: flex-end;
+    border-radius: 12px;
 }
 
 #iles img{
-    height: 75px;
-    width: 300px;
-    border: 3px black solid;
+    height: 90px;
+    padding: 0px;
+    border-radius: 12px 12px 0 0;
 }
 
 #iles p {
+    padding-left: 20px;
+    
+}
 
+#calanques {
+    grid-column: 3;
+    grid-row: 1/2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 12px;
 }
 
 #calanques img {
     height: 400px;
-    width: 300px;
+    padding: 0px;
+    border-radius: 12px 12px 0 0;
 }
 
 #calanques p {
+    padding-left: 20px;
+}
 
+#dame {
+    grid-column: 4;
+    grid-row: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 40%;
+    border-radius: 12px;
 }
 
 #dame img {
-    height: 150px;
-    width: 300px;
+    height: 140px;
+    padding: 0px;
+    border-radius: 12px 12px 0 0;
 }
 
 #dame p {
+    padding-left: 20px;
+    
+}
 
+#parc {
+    grid-column: 4;
+    grid-row: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-self: flex-end;
+    height: 45%;
+    border-radius: 12px;
 }
 
 #parc img {
     height: 150px;
-    width: 300px; 
+    padding: 0px;
+    border-radius: 12px 12px 0 0;
 }
 
 #parc p {
+    padding-left: 20px;
+}
 
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    margin-top: 5%;
+    background-color: #f3ededd8;
+    justify-content: space-between;
+}
+
+footer > div {
+    width: 30%;
+    margin-left: 30px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1em;
+    height: 40%;
+    padding-top: 0px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer h2 {
+    font-size: 1.2em;
+}
+
+#about {
+    list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1em;
+    height: 60%;
 }
