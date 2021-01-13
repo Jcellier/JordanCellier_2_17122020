@@ -2,6 +2,7 @@ body {
     margin-left: 0px;
     font-family: 'Raleway', sans-serif;
     margin-right: 0px;
+    margin-bottom: 0px;
 }
 
 header {
@@ -48,28 +49,38 @@ header h2 {
 
 #search {
     display: flex;
-    height: 30px;
+    height: 40px;
 }
 
 #search input {
-    border-top: 1px #b8b6b6c4 solid;
-    border-bottom: 1px #b8b6b6c4 solid;
-    border-left: 1px #b8b6b6c4 solid;
+    border-top: 1px #f3ededd8 solid;
+    border-bottom: 1px #f3ededd8 solid;
+    border-left: 1px #f3ededd8 solid;
     border-right: none;
+    width: 10%;
 }
 
 #search i {
-    width: 25px;
+    width: 40px;
     height: auto;
-    padding-top: 7px;
-    background: #b8b6b6c4;
+    padding-top: 10px;
+    padding-left: 3px;
+    background: #f3ededd8;
     border-radius: 10px 0px 0px 10px;
     text-align: center;
+}
+
+#search button {
+    width: 6%;
 }
 
 ::placeholder {
     opacity: 1;
     font-weight: bolder;
+}
+
+:placeholder-shown{
+    padding-left: 10px;
 }
 
 #submit {
@@ -94,18 +105,21 @@ header h2 {
 
 #filtres p {
     border: 1px solid #b8b6b6c4;
-    
+    border-left: transparent;
     width: fit-content;
     border-radius: 50px;
-    padding: 10px;
-    padding-left: 0;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
     font-weight: bold;
 }
 
 #filtres span {
-    border: 2px transparent rgba(136, 136, 255, 0.5);
+    border: 5px transparent rgba(136, 136, 255, 0.5);
     border-radius: 50%;
-    padding: 10px;
+    
+    padding: 0.7em 0.7em 0.7em 0.7em;
     background-color: #DEEBFF;
     color: #0065FC;
 }
@@ -176,20 +190,20 @@ section {
 }
 
 #images img {
-    width: 360px;  
+    width: 20em;  
     height: 150px;
     padding: 5px;
     object-fit: cover;
     border-radius: 12px 12px 0 0px;
+    border: black 3px solid;
     
 }
 
 .heb {
-    /*border: 3px black solid;*/
+    border: 3px brown solid;
     background-color: white;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
 
 #images .fas {
@@ -471,4 +485,135 @@ footer h2 {
     justify-content: space-between;
     font-size: 1em;
     height: 60%;
+}
+
+
+
+@media (max-width: 1600px) {
+
+    #search {
+        width: 120%;
+    }
+
+    #link {
+        display: flex;
+        list-style-type: none;
+        margin-left: 65%;
+        width: 400px;
+        justify-content: space-around;
+    }
+
+    #filtres {
+        width: 70%;
+    }
+
+
+    #images {
+        height: 700px;
+        display: flex;
+        align-content: space-around;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /*border: 3px solid brown;*/
+        
+    }
+    
+    #images img {
+        width: 15em;  
+        height: 150px;
+        padding: 5px;
+        object-fit: cover;
+        border-radius: 12px 12px 0 0px;
+    }
+    
+    .heb {
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+}
+
+
+@media (max-width: 1250px) {
+
+    .logo img {
+        width: 10%;
+    }
+
+    #search {
+        width: 180%;
+    }
+
+    #link {
+        display: flex;
+        list-style-type: none;
+        margin-left: 50%;
+        width: 400px;
+        justify-content: space-around;
+    }
+
+    #filtres {
+        width: 90%;
+    }
+
+    #hebergement {
+        border: 3px solid black;
+        width: 80%;
+    }
+
+    #images img {
+        width: 10em;  
+        height: 150px;
+        padding: 5px;
+        object-fit: cover;
+        border-radius: 12px 12px 0 0px;
+    }
+
+    #populaire {
+        margin-top: 30px;
+        border: black 3px solid;
+        width: 80%;
+        height: 650px;
+        display: flex;
+        margin-left: 40px;
+        border-radius: 12px;
+        background-color: #f3ededd8;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    #populaire h1 {
+        width: fit-content;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.3em;
+    }
+    
+    .image_aside {
+        border: yellow 3px solid;
+        border-radius: 12px;
+        display: flex;
+        width: 80%;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding-right: 20px;
+    }
+
+    #dame {
+        grid-column: 4;
+        grid-row: 1;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        height: 50%;
+        border-radius: 12px;
+    }
+
+
+}
+
+
+@media (min-width: 375px) and (max-width: 812px) {
+
+
 }
