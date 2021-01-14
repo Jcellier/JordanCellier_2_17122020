@@ -71,6 +71,11 @@ header h2 {
     font-weight: lighter;
 }
 
+#fil h3 {
+    display: none;
+    visibility: collapse;
+}
+
 #search {
     display: flex;
     height: 40px;
@@ -153,42 +158,44 @@ header h2 {
 }
 
 
-#eco:hover {
-    background-color: black;
-    color: white;
-}
-
-#family:hover {
-    text-decoration: underline;
-}
-
-#romance:hover {
-    text-decoration: underline;
-}
-
+#eco:hover,
+#family:hover,
+#romance:hover,
 #pets:hover {
     text-decoration: underline;
 }
 
-
 #info span {
+    display: flex;
     color: #0065FC;
     border: 1px solid #b8b6b6c4;
-    padding: 3px;
+    padding: 0px;
     border-radius: 100%;
     background-color: white;
-    
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    justify-content: center;
+    margin-right: 10px;
+  
 }
 
 #info i {
-    width: 15px;
+    width: 2px;
     text-align: center;
+    height: 20px;
+    padding-top: 4px; 
+    padding-right: 2px; 
+    
 }
 
 #info {
     font-size: 0.7em;
     margin-bottom: 30px;
+    display: flex;
+    
 }
+
 
 #hebergement {
     /*border: 3px solid blue;*/
@@ -680,20 +687,9 @@ footer h2 {
         
     }
 
-    #hebergement {
-        display: none;
-        visibility: collapse;
-    }
+    
 
-    section {
-        display: none;
-        visibility: collapse;
-    }
-
-    #filtres {
-        display: none;
-        visibility: collapse;
-    }
+    
 
     footer {
         display: none;
@@ -701,10 +697,7 @@ footer h2 {
     }
 
 
-    #search {
-        display: flex;
-        width: auto;
-    }
+    
 
 
     .logo img {
@@ -762,12 +755,107 @@ footer h2 {
     }
 
     header h2 {
-        font-size: 1.3em;
+        font-size: 1.2em;
         margin-bottom: 5%;
     }
 
+    #search {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        height: 3em;
+        margin-bottom: 30px;
+    }
 
+    #search .fa-search {
+        display: initial;
+        background-color: #0065FC;
+        color: white;
+        justify-items: center;
+    }
 
+    #search button {
+        width: 14%;
+        border-radius: 12px;
+    }
+
+    #submit span {
+        display: none;
+        visibility: collapse;
+    }
+
+    #search .fa-map-marker-alt {
+        width: 14%;
+        padding-top: 14px;
+        padding-left: 4px;
+    }
+
+    #search input {
+        width: 62%;
+
+    }
+
+    ::placeholder {
+        font-size: 1.2em;
+    }
+
+    #filtres h3 {
+        display: none;
+        visibility: collapse;
+    }
+
+    #fil h3 {
+        display:initial;
+        visibility:visible;
+        margin-left: 20px;
+    }
+
+    #filtres {
+        display: flex;
+        width: 95%;
+        margin-left: 20px;
+        margin-top: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: stretch;
+        
+    }
+    
+    
+    #filtres p {
+        width: auto;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    #info {
+        margin-left: 20px;
+    }
+
+    #info p {
+        font-size: 1.5em;
+        margin-left: 10px;
+    }
+
+   /* section {
+        display: none;
+        visibility: collapse;
+    }*/
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article:nth-of-type(1) {
+        border: 3px solid black;
+        order: 1;
+    }
+    article:nth-of-type(2) {
+        border: 3px solid black;
+        order: 1;
+    }
 
 
 
