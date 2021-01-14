@@ -74,6 +74,10 @@ header h2 {
     width: 6%;
 }
 
+#search .fa-search {
+    display: none;
+}
+
 ::placeholder {
     opacity: 1;
     font-weight: bolder;
@@ -162,12 +166,6 @@ header h2 {
     margin-bottom: 30px;
 }
 
-
-section {
-    /*display: flex;
-    flex-wrap: wrap;*/
-}
-
 #hebergement {
     /*border: 3px solid blue;*/
     margin-left: 30px;
@@ -195,12 +193,10 @@ section {
     padding: 5px;
     object-fit: cover;
     border-radius: 12px 12px 0 0px;
-    border: black 3px solid;
     
 }
 
 .heb {
-    border: 3px brown solid;
     background-color: white;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -264,11 +260,18 @@ section {
     display: flex;
     justify-content: space-between;
     font-size: 1.3em;
-    margin-bottom: ;
+}
+
+#populaire .fa-star {
+    padding-top: 15%;
+}
+
+#coeur .fa-star {
+    padding-top: 8%;
 }
 
 .image_aside {
-    /*border: yellow 3px solid;*/
+    height: 20%;
     border-radius: 12px;
     display: flex;
     width: 80%;
@@ -294,10 +297,10 @@ section {
 .image_aside img {
     /*border: brown 3px solid;*/
     width: 130px;  
-    height: 150px;
+    height: 140px;
     padding: 5px;
     object-fit: cover;
-    
+    border-radius: 12px 0 0 12px;
 }
 
 .image_aside a {
@@ -331,7 +334,6 @@ section {
 }
 
 #port {
-    border-radius: 12px;
     grid-column: 1;
     grid-row: 1/2;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -340,7 +342,6 @@ section {
 
 #port img {
     height: 400px;
-    
     padding: 0px;
     border-radius: 12px 12px 0 0;
 }
@@ -508,6 +509,23 @@ footer h2 {
     }
 
 
+    #populaire .fa-star {
+        padding-top: 0px;
+    }
+    
+    #coeur .fa-star {
+        padding-top: 0px;
+    }
+
+    .image_aside {
+        height: 25%;
+    }
+
+    .image_aside img {
+        height: 95%;
+    }
+
+
     #images {
         height: 700px;
         display: flex;
@@ -558,7 +576,6 @@ footer h2 {
     }
 
     #hebergement {
-        border: 3px solid black;
         width: 80%;
     }
 
@@ -572,7 +589,6 @@ footer h2 {
 
     #populaire {
         margin-top: 30px;
-        border: black 3px solid;
         width: 80%;
         height: 650px;
         display: flex;
@@ -590,15 +606,27 @@ footer h2 {
         justify-content: space-between;
         font-size: 1.3em;
     }
+
+
+    #populaire .fa-star {
+        padding-top: 15%;
+    }
+
+    .image_aside img {
+        height: 94%;
+    }
     
     .image_aside {
-        border: yellow 3px solid;
         border-radius: 12px;
         display: flex;
         width: 80%;
         background-color: white;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         padding-right: 20px;
+    }
+
+    .activ {
+        grid-gap: 2em;
     }
 
     #dame {
@@ -613,7 +641,86 @@ footer h2 {
 }
 
 
-@media (min-width: 375px) and (max-width: 812px) {
+@media only screen and (min-width:350px) and (max-width: 745px) {
+
+    body {
+        padding-right: 0px;
+    }
+
+    header {
+        margin-left: 0px; 
+    }
+
+    #hebergement {
+        display: none;
+        visibility: collapse;
+    }
+
+    section {
+        display: none;
+        visibility: collapse;
+    }
+
+    #filtres {
+        display: none;
+        visibility: collapse;
+    }
+
+    footer {
+        display: none;
+        visibility: collapse;
+    }
+
+
+    #search {
+        display: flex;
+        width: auto;
+    }
+
+
+    .logo img {
+        width: 30%;
+    }
+
+    .logo {
+        display:flex;
+        border: 3px solid black;
+    }
+
+    #link {
+        display: grid;
+        border: 3px solid red;
+        margin-left: 0px;
+        justify-content: start;
+        padding-left: 0px;
+        width: auto;
+        
+    }
+
+
+
+
+
+
+
+
+    #activity {
+        width: 100%;
+        border: 3px solid black;
+        flex-direction: column;
+    }
+
+    .activ {
+        margin-left: 0px;
+        display: flex;
+        width: 94%;
+        grid-template-columns: 1fr;
+        grid-column: 1fr;
+        grid-gap: 0px;
+        flex-direction: column;
+    }
+
+    
 
 
 }
