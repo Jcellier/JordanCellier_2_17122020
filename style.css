@@ -674,7 +674,7 @@ footer h2 {
 }
 
 
-@media only screen and (min-width:350px) and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
 
     body {
         padding-right: 0px;
@@ -819,6 +819,7 @@ footer h2 {
         flex-wrap: wrap;
         justify-content: stretch;
         
+        
     }
     
     
@@ -831,6 +832,7 @@ footer h2 {
     
     #info {
         margin-left: 20px;
+        
     }
 
     #info p {
@@ -849,13 +851,115 @@ footer h2 {
     }
 
     article:nth-of-type(1) {
-        border: 3px solid black;
         order: 1;
     }
+
     article:nth-of-type(2) {
-        border: 3px solid black;
         order: 1;
     }
+
+    #populaire {
+        width: auto;
+        margin-left: 0px;
+        padding-left: 0px;
+        border-radius: 0px;
+        margin-right: 0px;
+        padding-right: 0px;
+        height: 600px;
+    }
+    
+    #populaire h1 {
+        width: 100%;
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.3em;
+    }
+
+    #populaire .fa-chart-line {
+        padding-right: 10%;
+    }
+
+    .image_aside {
+        height: 150px;
+        width: 86%;
+        margin-left: 0px;
+        padding-right: 20px;
+    }
+
+    #populaire .fa-star {
+        padding-top: 10px;
+    }
+
+    #last_pop {
+        margin-bottom: 30px;
+    }
+
+
+    #hebergement {
+        border: 3px solid blue;
+        flex-direction: column;
+        height: 1000px;
+        background-color: white;
+        margin-left: 0px;
+        width: 85%;
+
+    }
+
+    #images {
+        height: 620px;
+        display: flex;
+        align-content: space-around;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /*border: 3px solid brown;*/
+        
+    }
+
+
+
+
+
+   /* #hebergement {
+        border: 3px solid blue;
+        margin-left: 30px;
+        width: 65%;
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f3ededd8;
+        border-radius: 12px;
+    }
+    
+    #images {
+        height: 620px;
+        display: flex;
+        align-content: space-around;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border: 3px solid brown;
+        
+    }
+    
+    #images img {
+        width: 20em;  
+        height: 150px;
+        padding: 5px;
+        object-fit: cover;
+        border-radius: 12px 12px 0 0px;
+        
+    }*/
+    
+    .heb {
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+
+
+
+
 
 
 
