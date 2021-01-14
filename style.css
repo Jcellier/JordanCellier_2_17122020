@@ -14,28 +14,52 @@ header {
 }
 
 .logo img {
-    width: 5%;
+    width: 30%;
 }
 
-#link {
+#head {
     display: flex;
-    list-style-type: none;
-    margin-left: 75%;
-    width: 300px;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
 }
 
-#link a {
+#heb-act a {
+    padding-top: 30px;
+}
+
+nav a {
+    font-size: 0.9em;
+    color: black;
+    padding-top: 3px;
     text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a:hover {
+    text-decoration: #0065FC;
     color: #0065FC;
 }
 
-#link a:visited {
-    color: grey;
+
+nav {
+    display: flex;
+    align-items: center;
 }
 
-#link li {
-    font-size: 0.9em;
+#heb-act a:hover {
+    border-top: 3px solid #0065FC;
+    margin-top: 0px;
+    padding-top: 64px;
+}
+
+.headersignup {
+    color: #0065FC;
+    font-weight: bold;
+    margin-right: 10px;
+}
 }
 
 header h1 {
@@ -496,12 +520,15 @@ footer h2 {
         width: 120%;
     }
 
-    #link {
-        display: flex;
-        list-style-type: none;
-        margin-left: 65%;
-        width: 400px;
-        justify-content: space-around;
+    .logo img {
+        width: 35%;
+        margin-bottom: 1%;
+    }
+    
+    #heb-act a:hover {
+        border-top: 3px solid #0065FC;
+        margin-top: 0px;
+        padding-top: 70px;
     }
 
     #filtres {
@@ -556,19 +583,18 @@ footer h2 {
 @media (max-width: 1250px) {
 
     .logo img {
-        width: 10%;
+        width: 50%;
+        margin-bottom: 1%;
     }
 
     #search {
         width: 180%;
     }
 
-    #link {
-        display: flex;
-        list-style-type: none;
-        margin-left: 50%;
-        width: 400px;
-        justify-content: space-around;
+    #heb-act a:hover {
+        border-top: 3px solid #0065FC;
+        margin-top: 0px;
+        padding-top: 84px;
     }
 
     #filtres {
@@ -641,14 +667,17 @@ footer h2 {
 }
 
 
-@media only screen and (min-width:350px) and (max-width: 745px) {
+@media only screen and (min-width:350px) and (max-width: 750px) {
 
     body {
         padding-right: 0px;
+        margin-top: 0px;
+        
     }
 
     header {
-        margin-left: 0px; 
+        margin-left: 0px;
+        
     }
 
     #hebergement {
@@ -680,22 +709,63 @@ footer h2 {
 
     .logo img {
         width: 30%;
+        margin-left: 10%;
+        margin-bottom: 20px;
     }
 
-    .logo {
-        display:flex;
-        border: 3px solid black;
+    #head {
+        position: relative;
+    }
+   
+    #heb-act {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        /*border: 3px solid black;*/
     }
 
-    #link {
-        display: grid;
-        border: 3px solid red;
-        margin-left: 0px;
-        justify-content: start;
-        padding-left: 0px;
-        width: auto;
-        
+    #heb-act a {
+        width: 50%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #F2F2F2;
     }
+
+    #heb-act a:hover {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        color: #0065FC;
+        padding-top: 0px;
+        align-self: end;
+    }
+
+    #sign-up {
+        font-weight: bolder;
+        color: #0065FC;
+        margin-bottom: 20px;
+    }
+
+    header h1, header h2 {
+        margin-left: 20px;
+        margin-right: 20px;    
+    }
+
+    header h1 {
+        font-size: 1.8em;
+        font-weight: bolder;
+        margin-bottom: 0px;
+    }
+
+    header h2 {
+        font-size: 1.3em;
+        margin-bottom: 5%;
+    }
+
 
 
 
@@ -706,7 +776,7 @@ footer h2 {
 
     #activity {
         width: 100%;
-        border: 3px solid black;
+        /*border: 3px solid black;*/
         flex-direction: column;
     }
 
