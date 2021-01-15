@@ -59,6 +59,12 @@ nav {
     font-weight: bold;
     margin-right: 10px;
 }
+
+#sign-up {
+    font-weight: bolder;
+    color: #0065FC;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 header h1 {
@@ -531,7 +537,7 @@ footer h2 {
 
 
 
-@media (max-width: 1600px) {
+@media (max-width: 1610px) {
 
     #search {
         width: 98%;
@@ -784,6 +790,8 @@ footer h2 {
         font-weight: bolder;
         color: #0065FC;
         margin-bottom: 20px;
+        text-decoration: none;
+        font-weight: bolder;
     }
 
     header h1, header h2 {
