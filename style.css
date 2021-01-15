@@ -2,7 +2,6 @@ body {
     margin-left: 0px;
     font-family: 'Raleway', sans-serif;
     margin-right: 0px;
-    margin-bottom: 0px;
 }
 
 header {
@@ -81,12 +80,13 @@ header h2 {
     height: 40px;
 }
 
+
 #search input {
     border-top: 1px #f3ededd8 solid;
     border-bottom: 1px #f3ededd8 solid;
     border-left: 1px #f3ededd8 solid;
     border-right: none;
-    width: 10%;
+    width: 15%;
 }
 
 #search i {
@@ -105,6 +105,7 @@ header h2 {
 
 #search .fa-search {
     display: none;
+    visibility: collapse;
 }
 
 ::placeholder {
@@ -234,7 +235,7 @@ header h2 {
 }
 
 #images .fas {
-    color: blue;
+    color:  #0065FC;
     margin-bottom: 10px;
 }
 
@@ -284,6 +285,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 #populaire h1 {
@@ -291,18 +293,19 @@ section {
     display: flex;
     justify-content: space-between;
     font-size: 1.3em;
+    
 }
 
 #populaire .fa-star {
-    padding-top: 15%;
+    padding-top: 35%;
 }
 
 #coeur .fa-star {
-    padding-top: 8%;
+    padding-top: 26%;
 }
 
 .image_aside {
-    height: 20%;
+    height: 25%;
     border-radius: 12px;
     display: flex;
     width: 80%;
@@ -318,7 +321,7 @@ section {
 }
 
 .desc .fas {
-    color: blue;
+    color:  #0065FC;
 }
 
 .desc .empty {
@@ -328,7 +331,8 @@ section {
 .image_aside img {
     /*border: brown 3px solid;*/
     width: 130px;  
-    height: 140px;
+    height: 94%;
+    /*height: 140px;*/
     padding: 5px;
     object-fit: cover;
     border-radius: 12px 0 0 12px;
@@ -347,6 +351,7 @@ section {
 
 #activity h1 {
     margin-left: 30px;
+    margin-top: 50px;
 }
 
 .activ {
@@ -356,6 +361,7 @@ section {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column: repeat(4, 1fr);
     grid-gap: 5em;
+    
 }
 
 .activ img {
@@ -440,7 +446,7 @@ section {
     grid-column: 4;
     grid-row: 1;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    height: 40%;
+    height: 43%;
     border-radius: 12px;
 }
 
@@ -472,6 +478,10 @@ section {
 
 #parc p {
     padding-left: 20px;
+}
+
+.visit p {
+    font-weight: bolder;
 }
 
 
@@ -524,7 +534,15 @@ footer h2 {
 @media (max-width: 1600px) {
 
     #search {
-        width: 120%;
+        width: 98%;
+    }
+
+    #search input {
+        width: 15%;
+    }
+
+    #search button {
+        width: 10%;
     }
 
     .logo img {
@@ -543,12 +561,20 @@ footer h2 {
     }
 
 
-    #populaire .fa-star {
-        padding-top: 0px;
+    #coeur2 .fa-star {
+        padding-top: 0%;
     }
     
     #coeur .fa-star {
-        padding-top: 0px;
+        padding-top: 0%;
+    }
+
+    #coeur1 .fa-star {
+        padding-top: 0%;
+    }
+
+    .desc p {
+        font-size: 0.9em;
     }
 
     .image_aside {
@@ -594,8 +620,12 @@ footer h2 {
         margin-bottom: 1%;
     }
 
-    #search {
-        width: 180%;
+    #search input {
+        width: 20%;
+    }
+
+    #search button {
+        width: 10%;
     }
 
     #heb-act a:hover {
@@ -609,11 +639,19 @@ footer h2 {
     }
 
     #hebergement {
-        width: 80%;
+        width: 90%;
+    }
+
+    #images {
+        height: 600px;
+    }
+
+    .heb {
+        width: 30%;
     }
 
     #images img {
-        width: 10em;  
+        width: 96%;  
         height: 150px;
         padding: 5px;
         object-fit: cover;
@@ -622,10 +660,11 @@ footer h2 {
 
     #populaire {
         margin-top: 30px;
-        width: 80%;
+        width: 96%;
         height: 650px;
         display: flex;
         margin-left: 40px;
+        margin-right: 40px;
         border-radius: 12px;
         background-color: #f3ededd8;
         flex-direction: column;
@@ -673,7 +712,25 @@ footer h2 {
 
 }
 
+@media only screen and (min-width:751px) and (max-width: 1000px) {
+    
+    #search input {
+        width: 23%;
+    }
 
+    #search button {
+        width: 12%;
+    }
+
+    #filtres {
+        width: 95%;
+    }
+
+    #filtres p {
+        font-size: 0.9em;
+    }
+
+}
 @media only screen and (max-width: 750px) {
 
     body {
@@ -686,19 +743,6 @@ footer h2 {
         margin-left: 0px;
         
     }
-
-    
-
-    
-
-    footer {
-        display: none;
-        visibility: collapse;
-    }
-
-
-    
-
 
     .logo img {
         width: 30%;
@@ -717,7 +761,6 @@ footer h2 {
         width: 100%;
         display: flex;
         justify-content: space-around;
-        /*border: 3px solid black;*/
     }
 
     #heb-act a {
@@ -769,6 +812,7 @@ footer h2 {
 
     #search .fa-search {
         display: initial;
+        visibility: visible;
         background-color: #0065FC;
         color: white;
         justify-items: center;
@@ -818,10 +862,7 @@ footer h2 {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: stretch;
-        
-        
     }
-    
     
     #filtres p {
         width: auto;
@@ -839,11 +880,6 @@ footer h2 {
         font-size: 1.5em;
         margin-left: 10px;
     }
-
-   /* section {
-        display: none;
-        visibility: collapse;
-    }*/
 
     section {
         display: flex;
@@ -897,9 +933,8 @@ footer h2 {
 
 
     #hebergement {
-        border: 3px solid blue;
         flex-direction: column;
-        height: 1000px;
+        height: 100%;
         background-color: white;
         margin-left: 0px;
         width: 85%;
@@ -907,62 +942,27 @@ footer h2 {
     }
 
     #images {
-        height: 620px;
+        height: 90%;
         display: flex;
         align-content: space-around;
         justify-content: space-between;
-        flex-wrap: wrap;
-        /*border: 3px solid brown;*/
-        
+        flex-wrap: wrap;   
     }
 
 
-
-
-
-   /* #hebergement {
-        border: 3px solid blue;
-        margin-left: 30px;
-        width: 65%;
-        padding: 30px;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: #f3ededd8;
-        border-radius: 12px;
+    .heb {
+        width: 100%;
+        margin-bottom: 20px;
     }
-    
-    #images {
-        height: 620px;
-        display: flex;
-        align-content: space-around;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        border: 3px solid brown;
-        
-    }
-    
+
     #images img {
-        width: 20em;  
+        width: 98%;  
         height: 150px;
         padding: 5px;
         object-fit: cover;
         border-radius: 12px 12px 0 0px;
         
-    }*/
-    
-    .heb {
-        background-color: white;
-        border-radius: 12px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
-
-
-
-
-
-
-
-
 
 
 
@@ -982,7 +982,83 @@ footer h2 {
         flex-direction: column;
     }
 
+    .visit {
+        width: 90%;
+        height: 250px;
+        margin: 20px 30px; 
+    }
+
+    .visit img {
+        height: 100%;
+    }
+
+    .visit p {
+        font-weight: bolder;
+    }
     
+    #port img {
+        height: 200px;
+    }
+
+    
+    #fort {
+        height: 55%;
+    }
+    
+    #fort img {
+        height: 200px;
+        width: 100%;
+    }
+    
+    #iles {
+        align-self: stretch;
+    }
+    
+    #iles img{
+        height: 200px;
+    }
+    
+    #calanques img {
+        height: 200px;
+    }
+
+    
+    #dame {
+        height: 40%;
+    }
+    
+    #dame img {
+        height: 200px;
+        padding: 0px;
+        border-radius: 12px 12px 0 0;
+    }
+    
+    #parc {
+        align-self: stretch;
+    }
+    
+    #parc img {
+        height: 200px;
+        padding: 0px;
+        border-radius: 12px 12px 0 0;
+    }
+    
+    footer {
+        display: flex;
+        margin-top: 5%;
+        justify-content: stretch;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+    
+    footer > div {
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    #about li, #quality li, #assistance li {
+        padding-bottom: 10px;
+    }
 
 
 }
