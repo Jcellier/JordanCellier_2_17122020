@@ -903,7 +903,7 @@ footer h2 {
   }
 
   #images {
-    height: 90%;
+    height: auto;
     display: flex;
     align-content: space-around;
     justify-content: space-between;
@@ -932,7 +932,7 @@ footer h2 {
   .activ {
     margin-left: 0px;
     display: flex;
-    width: 94%;
+    /* width: 94%; */
     grid-template-columns: 1fr;
     /* grid-column: 1fr; */
     grid-gap: 0px;
