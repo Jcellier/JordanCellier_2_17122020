@@ -1,15 +1,11 @@
 body {
-  margin-left: 0px;
+  margin: 0px;
   font-family: "Raleway", sans-serif;
-  margin-right: 0px;
+  /* margin-right: 0px; */
 }
 
 header {
   margin-left: 30px;
-}
-
-.logo {
-  display: flex;
 }
 
 .logo img {
@@ -144,7 +140,6 @@ header h2 {
 #filtres p {
   border: 1px solid #b8b6b6c4;
   border-left: transparent;
-  width: fit-content;
   border-radius: 50px;
   padding-right: 20px;
   padding-top: 10px;
@@ -154,9 +149,7 @@ header h2 {
 }
 
 #filtres span {
-  border: 5px transparent rgba(136, 136, 255, 0.5);
   border-radius: 50%;
-
   padding: 0.7em 0.7em 0.7em 0.7em;
   background-color: #deebff;
   color: #0065fc;
@@ -186,7 +179,6 @@ header h2 {
 #info i {
   width: 2px;
   text-align: center;
-  height: 20px;
   padding-top: 4px;
   padding-right: 2px;
 }
@@ -198,7 +190,6 @@ header h2 {
 }
 
 #hebergement {
-  /*border: 3px solid blue;*/
   margin-left: 30px;
   width: 65%;
   padding: 30px;
@@ -214,7 +205,6 @@ header h2 {
   align-content: space-around;
   justify-content: space-between;
   flex-wrap: wrap;
-  /*border: 3px solid brown;*/
 }
 
 #images img {
@@ -267,7 +257,7 @@ header h2 {
   text-decoration: underline;
 }
 
-section {
+#section {
   display: flex;
   flex-wrap: wrap;
 }
@@ -294,6 +284,7 @@ section {
 
 #populaire .fa-star {
   padding-top: 35%;
+  height: 20px;
 }
 
 #coeur .fa-star {
@@ -479,11 +470,13 @@ footer {
   margin-top: 5%;
   background-color: #f3ededd8;
   justify-content: space-between;
+  padding-top: 1em;
+  padding-bottom: 3em;
 }
 
 footer > div {
   width: 30%;
-  margin-left: 30px;
+  padding-left: 30px;
 }
 
 footer ul {
@@ -651,7 +644,6 @@ footer h2 {
   }
 
   #populaire h2 {
-    width: fit-content;
     display: flex;
     justify-content: space-between;
     font-size: 1.3em;
@@ -852,7 +844,7 @@ footer h2 {
     margin-left: 10px;
   }
 
-  section {
+  #section {
     display: flex;
     flex-direction: column;
   }
@@ -1015,8 +1007,7 @@ footer h2 {
   }
 
   footer > div {
-    width: 100%;
-    margin-left: 30px;
+    width: 500px;
   }
 
   #about li,
